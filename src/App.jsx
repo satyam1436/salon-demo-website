@@ -14,7 +14,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/salon-demo-website">
       <Navbar />
 
       <Routes>
@@ -30,6 +30,7 @@ function App() {
 
       <Footer />
     </BrowserRouter>
+
   );
 }
 
