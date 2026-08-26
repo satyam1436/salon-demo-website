@@ -1,4 +1,5 @@
 import salonImage from "../assets/images/salon/hero.jpg"
+import { Link } from "react-router-dom";
 
 function AboutPage() {
     return (
@@ -204,12 +205,9 @@ function AboutPage() {
                     </span>
                 </h2>
 
-                <a
-                    href="/#booking"
-                    className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105"
-                >
+                <Link to="/booking" className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105">
                     Book Appointment
-                </a>
+                </Link>
 
             </section>
 

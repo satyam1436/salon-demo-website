@@ -243,12 +243,9 @@ function ServicesPage() {
                                 </span>
                             </div>
 
-                            <a
-                                href="/booking"
-                                className="mt-8 inline-flex rounded-full border border-white/20 px-5 py-3 text-sm transition hover:bg-white hover:text-black"
-                            >
+                            <Link to="/booking" className="mt-8 inline-flex rounded-full border border-white/20 px-5 py-3 text-sm transition hover:bg-white hover:text-black">
                                 Book Package →
-                            </a>
+                            </Link>
                         </div>
 
 
@@ -272,12 +269,9 @@ function ServicesPage() {
                                 </span>
                             </div>
 
-                            <a
-                                href="/booking"
-                                className="mt-8 inline-flex rounded-full border border-black px-5 py-3 text-sm transition hover:bg-black hover:text-white"
-                            >
+                            <Link to="/booking" className="mt-8 inline-flex rounded-full border border-black px-5 py-3 text-sm transition hover:bg-black hover:text-white">
                                 Book Package →
-                            </a>
+                            </Link>
                         </div>
 
 
@@ -301,12 +295,9 @@ function ServicesPage() {
                                 </span>
                             </div>
 
-                            <a
-                                href="/booking"
-                                className="mt-8 inline-flex rounded-full border border-black px-5 py-3 text-sm transition hover:bg-black hover:text-white"
-                            >
+                            <Link to="/booking" className="mt-8 inline-flex rounded-full border border-black px-5 py-3 text-sm transition hover:bg-black hover:text-white">
                                 Book Package →
-                            </a>
+                            </Link>
                         </div>
 
                     </div>
@@ -331,12 +322,9 @@ function ServicesPage() {
                     </span>
                 </h2>
 
-                <a
-                    href="/booking"
-                    className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105"
-                >
+                <Link to="/booking" className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105">
                     Book Appointment →
-                </a>
+                </Link>
 
             </section>
 

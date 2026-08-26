@@ -3,6 +3,7 @@ import stylist2 from "../assets/images/salon/team/stylist-02.jpg"
 import stylist3 from "../assets/images/salon/team/stylist-03.jpg"
 import stylist4 from "../assets/images/salon/team/stylist-04.jpg"
 import SalonTeam from "../assets/images/salon/team/salonTeam.jpg"
+import { Link } from "react-router-dom";
 
 const team = [
     {
@@ -201,12 +202,9 @@ function TeamPage() {
                     </span>
                 </h2>
 
-                <a
-                    href="/#booking"
-                    className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105"
-                >
+                <Link to="/booking" className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105">
                     Book Appointment →
-                </a>
+                </Link>
 
             </section>
 

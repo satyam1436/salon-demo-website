@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ContactPage() {
     return (
         <main className="bg-white text-black">
@@ -285,12 +287,9 @@ function ContactPage() {
                     </span>
                 </h2>
 
-                <a
-                    href="/booking"
-                    className="mt-9 inline-flex rounded-full bg-white px-8 py-4 text-sm font-medium text-black transition hover:scale-105"
-                >
+                <Link to="/booking" className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105">
                     Book Appointment →
-                </a>
+                </Link>
 
             </section>
 

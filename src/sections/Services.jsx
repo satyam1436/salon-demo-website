@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const services = [
     {
         number: "01",
@@ -121,13 +123,10 @@ function Services() {
 
                 {/* CTA */}
                 <div className="mt-10 text-center">
-                    <a
-                        href="/services"
-                        className="inline-flex items-center gap-2 rounded-full border border-black px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white"
-                    >
+                    <Link to="/services" className="inline-flex items-center gap-2 rounded-full border border-black px-6 py-3 text-sm font-medium transition-all duration-300 hover:bg-black hover:text-white">
                         View All Services
                         <span>→</span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>

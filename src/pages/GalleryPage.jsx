@@ -5,6 +5,7 @@ import galleryImage2 from "../assets/images/salon/gallery/gallery-02.jpg"
 import galleryImage3 from "../assets/images/salon/gallery/gallery-03.jpg"
 import galleryImage4 from "../assets/images/salon/gallery/gallery-04.jpg"
 import galleryImage5 from "../assets/images/salon/gallery/gallery-05.jpg"
+import { Link } from "react-router-dom";
 
 const categories = ["All", "Hair", "Grooming", "Interior"];
 
@@ -101,8 +102,8 @@ function GalleryPage() {
                                 key={category}
                                 onClick={() => setActiveCategory(category)}
                                 className={`rounded-full px-5 py-2.5 text-sm transition duration-300 ${activeCategory === category
-                                        ? "bg-black text-white"
-                                        : "border border-black/15 text-black/60 hover:border-black hover:text-black"
+                                    ? "bg-black text-white"
+                                    : "border border-black/15 text-black/60 hover:border-black hover:text-black"
                                     }`}
                             >
                                 {category}
@@ -170,12 +171,9 @@ function GalleryPage() {
                     </span>
                 </h2>
 
-                <a
-                    href="/#booking"
-                    className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105"
-                >
+                <Link to="/booking" className="mt-9 inline-flex rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition hover:scale-105">
                     Book Appointment →
-                </a>
+                </Link>
 
             </section>
 

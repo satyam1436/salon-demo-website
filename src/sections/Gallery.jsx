@@ -3,6 +3,7 @@ import galleryImage2 from "../assets/images/salon/gallery/gallery-02.jpg"
 import galleryImage3 from "../assets/images/salon/gallery/gallery-03.jpg"
 import galleryImage4 from "../assets/images/salon/gallery/gallery-04.jpg"
 import galleryImage5 from "../assets/images/salon/gallery/gallery-05.jpg"
+import { Link } from "react-router-dom";
 
 const images = [
     {
@@ -93,13 +94,10 @@ function Gallery() {
 
                 {/* CTA */}
                 <div className="mt-10 text-center">
-                    <a
-                        href="/booking"
-                        className="inline-flex items-center gap-2 rounded-full border border-black px-6 py-3 text-sm font-medium transition duration-300 hover:bg-black hover:text-white"
-                    >
+                    <Link to="/booking" className="inline-flex items-center gap-2 rounded-full border border-black px-6 py-3 text-sm font-medium transition duration-300 hover:bg-black hover:text-white">
                         Book Your Appointment
                         <span>→</span>
-                    </a>
+                    </Link>
                 </div>
 
             </div>

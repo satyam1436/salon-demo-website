@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function BookingCTA() {
     return (
         <section
@@ -28,13 +30,10 @@ function BookingCTA() {
 
                 {/* CTA */}
                 <div className="mt-9">
-                    <a
-                        href="/booking"
-                        className="inline-flex items-center gap-3 rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition duration-300 hover:scale-105 hover:bg-black/85"
-                    >
+                    <Link to="/booking" className="inline-flex items-center gap-3 rounded-full bg-black px-8 py-4 text-sm font-medium text-white transition duration-300 hover:scale-105 hover:bg-black/85">
                         Book Appointment
                         <span>→</span>
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Additional Info */}
