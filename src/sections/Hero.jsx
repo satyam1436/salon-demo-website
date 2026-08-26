@@ -1,4 +1,5 @@
 import heroImage from "../assets/images/salon/hero.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
     return (
@@ -44,19 +45,13 @@ function Hero() {
                     {/* Buttons */}
                     <div className="mt-9 flex flex-wrap gap-4">
 
-                        <a
-                            href="/booking"
-                            className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition duration-300 hover:scale-105 hover:bg-gray-200"
-                        >
+                        <Link to="/booking" className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition duration-300 hover:scale-105 hover:bg-gray-200">
                             Book Appointment
-                        </a>
+                        </Link>
 
-                        <a
-                            href="/services"
-                            className="rounded-full border border-white/40 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-black"
-                        >
+                        <Link to="/services" className="rounded-full border border-white/40 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition duration-300 hover:bg-white hover:text-black">
                             Explore Services
-                        </a>
+                        </Link>
 
                     </div>
 
