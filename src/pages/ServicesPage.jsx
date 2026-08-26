@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const categories = [
     {
         title: "Hair Services",
