@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const services = [
     {
@@ -164,12 +165,9 @@ function BookingPage() {
 
                     </div>
 
-                    <a
-                        href="/"
-                        className="mt-8 inline-flex rounded-full bg-black px-7 py-3.5 text-sm font-medium text-white transition hover:scale-105"
-                    >
+                    <Link to="/" className="mt-8 inline-flex rounded-full bg-black px-7 py-3.5 text-sm font-medium text-white transition hover:scale-105">
                         Back to Home
-                    </a>
+                    </Link>
 
                 </div>
             </main>
@@ -240,8 +238,8 @@ function BookingPage() {
                                             key={service.id}
                                             onClick={() => setSelectedService(service)}
                                             className={`border p-5 text-left transition duration-300 ${isSelected
-                                                    ? "border-black bg-black text-white"
-                                                    : "border-black/10 bg-white hover:border-black/40"
+                                                ? "border-black bg-black text-white"
+                                                : "border-black/10 bg-white hover:border-black/40"
                                                 }`}
                                         >
                                             <div className="flex items-start justify-between gap-4">
@@ -253,8 +251,8 @@ function BookingPage() {
 
                                                     <p
                                                         className={`mt-1 text-xs ${isSelected
-                                                                ? "text-white/50"
-                                                                : "text-black/40"
+                                                            ? "text-white/50"
+                                                            : "text-black/40"
                                                             }`}
                                                     >
                                                         {service.duration}
@@ -326,8 +324,8 @@ function BookingPage() {
                                                 key={time}
                                                 onClick={() => setSelectedTime(time)}
                                                 className={`rounded-full border px-3 py-2.5 text-sm transition duration-300 ${isSelected
-                                                        ? "border-black bg-black text-white"
-                                                        : "border-black/10 hover:border-black"
+                                                    ? "border-black bg-black text-white"
+                                                    : "border-black/10 hover:border-black"
                                                     }`}
                                             >
                                                 {time}
